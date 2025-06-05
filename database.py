@@ -18,3 +18,20 @@ def salvar_log(conversa, nome):
             f.write(f'[{nome}] {linha}\n')
         f.write('-' * 40 + '\n')
 
+def salvar_registro(dados):
+    with open("dados/registros.txt", "a", encoding="utf-8") as f:
+        linha = f"Nome: {dados['nome']} | Pedido: {dados['pedido']} | Data: {dados['data']}\n"
+        f.write(linha)
+
+def carregar_faq():
+    faq = []
+    try:
+        with open("dados/faq.txt", "r", encoding="utf-8") as f:
+            linhas = f.readlines()
+            for linha in linhas:
+                if "|" in linha:
+                    pergunta, resposta = linha.strip().split("|")
+                    faq.append((pergunta, resposta))
+    except FileNotFoundError:
+        pass
+    return faq
