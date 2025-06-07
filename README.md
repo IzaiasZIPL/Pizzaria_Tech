@@ -77,4 +77,4 @@ O sistema já acompanha alguns dados simulados, como:
 | José Felipe     | Implementação de utilitários e sistema principal |
 
 ## 🏁 Conclusão
-Este projeto foi desenvolvido com o objetivo de consolidar os conhecimentos adquiridos na disciplina, aplicando lógica de programação, modularização e persistência de dados em arquivos texto, sem o uso de frameworks externos.
+Este projeto foi desenvolvido com o objetivo de consolidar os conhecimentos adquiridos na disciplina, aplicando lógica de programação, modularização e persistência de dados em arquivos texto, sem o uso de frameworks externos. Link do vídeo https://www.youtube.com/watch?v=2aEWlSwRzYk em que é exposto o projeto.
